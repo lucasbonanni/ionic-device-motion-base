@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Height : {{contentHeight}}
     </ion-title>
+    
+    <ion-buttons end>
+      <button ion-button clear (click)="goBottom()">bottom</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding #content>
+  <h2>x: {{orientationX}}</h2>
+  <h2>y: {{orientationY}}</h2>
+  <h2>z: {{orientationZ}}</h2>
+  <!-- <ion-card>
+    <img src="assets/imgs/photo.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        test title
+      </ion-card-title>
+      <p>
+        test
+      </p>
+    </ion-card-content>
+  </ion-card> -->
 </ion-content>
